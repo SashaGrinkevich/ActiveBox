@@ -1,0 +1,42 @@
+@import '_cdn.scss';
+@import '_mixins.scss';
+@import '_variables.scss';
+
+.features {
+    padding: 116px 0;
+}
+.features-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.features-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.features__cards {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+}
+.card_item {
+    margin: 0 15px;
+}
+.card_item__icon {
+    padding: 0 135px;
+    padding-bottom: 29px;
+    
+}
+.card_item__title {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 24px;
+    @include h4;
+    padding-bottom: 20.43px
+}
+.card_item__text {
+    text-align: center;
+    @include p;
+    color: $gray;
+    padding-bottom: 88.57px;
+}
