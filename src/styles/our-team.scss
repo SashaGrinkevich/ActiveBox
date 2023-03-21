@@ -1,3 +1,90 @@
 @import '_cdn.scss';
 @import '_mixins.scss';
 @import '_variables.scss';
+
+.our-team {
+    padding: 114px 0;
+}
+
+.our-team-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.our-team-wrapper {}
+
+.our-team__cards {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+
+
+
+}
+
+.our-team__perconal-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.perconal-card__photo {
+    padding-bottom: 30px;
+}
+
+.perconal-card__name {
+    padding-bottom: 5.29px;
+    @include h4;
+}
+
+.perconal-card__proffesion {
+    padding-bottom: 17.86px;
+    color: $red;
+    @include h5;
+    text-transform: uppercase;
+}
+
+.perconal-card__text {
+    padding-bottom: 37.86px;
+    @include p;
+    color: $gray;
+}
+
+.brands-icons {
+    display: flex;
+}
+
+.icon {
+    width: 39px;
+    height: 39px;
+    border: 1px solid rgba(198, 203, 205, 1);
+    margin-right: 6px;
+
+}
+
+.fa-brands {
+    transition: 0.3s;
+}
+.fa-brands:hover{
+    transform: scale(1.4);
+    
+    color: $red;
+}
+
+.fa-facebook-f {
+    color: rgba(198, 203, 205, 1);
+    padding: 10px 15.33px 11px 14.33px;
+}
+
+.fa-twitter {
+    color: rgba(198, 203, 205, 1);
+    padding: 11px 10.35px 12.04px 9px;
+}
+
+.fa-linkedin {
+    color:rgba(198, 203, 205, 1);
+    padding: 10px 11px 11px 10px;
+}

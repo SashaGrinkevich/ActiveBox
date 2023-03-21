@@ -1,3 +1,85 @@
 @import '_cdn.scss';
 @import '_mixins.scss';
 @import '_variables.scss';
+
+.footer {
+    padding-top: 71.14px ;
+    background-color: #353C65;
+}
+.footer-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.footer-wrapper {
+}
+.footer-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-cards {
+    display: flex;
+}
+.cards-description {
+    width: 370px;
+    text-align: center;
+    padding-bottom: 67.14px
+}
+.cards-description__title {
+    @include h5;
+    color: $white;
+    font-weight: 700;
+    padding-bottom: 29px
+}
+.cards-description__item {
+    @include p;
+    color: $white;
+}
+.footer-icons {
+    display: flex;
+    justify-content: space-around ;
+    padding: 0 40px;
+}
+.footer__icon {
+    width: 39px;
+    height: 39px;
+    border: 1px solid rgba(198, 203, 205, 1);
+    margin:  0 27px;
+}
+.fa-brands {
+    transition: 0.3s;
+}
+
+.fa-brands:hover{
+    transform: scale(1.4);
+    
+    color: $red;
+}
+
+.fa-facebook-f {
+    color: rgba(198, 203, 205, 1);
+    padding: 10px 15.33px 11px 14.33px;
+}
+.fa-twitter {
+    color: rgba(198, 203, 205, 1);
+    padding: 11px 10.35px 12.04px 9px;
+}
+.fa-linkedin {
+    color:rgba(198, 203, 205, 1);
+    padding: 10px 11px 11px 10px;
+}
+.footer__text {
+    background-color: #2C3154;
+    width: 370px;
+    padding: 23.86px 0 24.14px 0
+}
+.footer__text-copyright {
+    @include p;
+    color: $gray;
+}
+.footer-span {
+    @include p;
+    color: $white;
+}

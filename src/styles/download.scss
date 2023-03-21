@@ -1,3 +1,44 @@
 @import '_cdn.scss';
 @import '_mixins.scss';
 @import '_variables.scss';
+
+.download {
+    padding: 114px 0;
+}
+.download-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.download-wrapper {
+}
+.download__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.download__title {
+    padding: 20px;
+    @include h3;
+    padding-bottom: 5.29px
+}
+.download__subtitle {
+    @include h5;
+    font-weight: 700px;
+    padding: 1.5px;
+    padding-bottom: 50.14px;
+}
+.download__button {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 26;
+    color: $white;
+    @include h4;
+    width: 369px;
+    height: 80px;
+    background-color: $background-button;
+}
+.download__button:hover {
+    background-color: #E71414;
+}
