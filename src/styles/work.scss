@@ -5,9 +5,9 @@
     
 }
 .work-container {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
+    // max-width: 1170px;
+    // margin: 0 auto;
+    // padding: 0 15px;
 }
 .work-wrapper {
 }
@@ -18,11 +18,14 @@
     justify-content:center;
 }
 .grid__item {
-    border: 2px solid white;
+    
+    
+    // border: 2px solid white;
 }
 .grid__item-1 {
     grid-column:1/2 ; 
-    grid-row:1/2 ;   
+    grid-row:1/2 ;
+       
 }
 
 .grid__item-2 {

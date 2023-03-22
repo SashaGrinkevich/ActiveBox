@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.scss" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -26,11 +27,11 @@
                 <div class="header__nav">
                     <nav class="nav">
                         <ul class="nav__menu">
-                            <li class="menu-link"> <a href="#features"> features</a></li>
-                            <li class="menu-link"><a href="#works"> works</a></li>
-                            <li class="menu-link"><a href="#our team"> our team</a></li>
-                            <li class="menu-link"><a href="#testimonials"> testimonials</a></li>
-                            <li class="menu-link"><a href="#download"> contact</a></li>
+                            <li class="menu__link"> <a href="#features" class="nav__link"> features</a></li>
+                            <li class="menu__link"><a href="#works" class="nav__link"> works</a></li>
+                            <li class="menu__link"><a href="#our team" class="nav__link"> our team</a></li>
+                            <li class="menu__link"><a href="#testimonials" class="nav__link"> testimonials</a></li>
+                            <li class="menu__link"><a href="#download" class="nav__link"> contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -162,22 +163,62 @@
             <div class="work-container">
                 <div class="work-wrapper">
                     <div class="work__grid">
-                        <div class="grid__item grid__item-1"> <img src="./img/work/work_1.jpg" alt="img"
-                                class="img__work"> </div>
-                        <div class="grid__item grid__item-2"><img src="./img/work/work_2.jpg" alt="img"
-                                class="img__work"></div>
-                        <div class="grid__item grid__item-3"><img src="./img/work/Rectangle 17.jpg" alt="img"
-                                class="img__work"></div>
-                        <div class="grid__item grid__item-4"><img src="./img/work/work_4.jpg" alt="img"
-                                class="img__work"></div>
-                        <div class="grid__item grid__item-5"><img src="./img/work/work_5.jpg" alt="img"
-                                class="img__work"></div>
-                        <div class="grid__item grid__item-6"><img src="./img/work/work_6.jpg" alt="img"
-                                class="img__work"></div>
-                        <div class="grid__item grid__item-7"><img src="./img/work/work_7.jpg" alt="img"
-                                class="img__work"></div>
-                        <div class="grid__item grid__item-8"><img src="./img/work/work_8.jpg" alt="img"
-                                class="img__work"></div>
+                        <div class="grid__item grid__item-1">
+                            <img src="./img/work/work_1.jpg" alt="img" class="img__work">
+                            <div class="work__item__content">
+                                <h4 class="item__content__title">Project Name</h4>
+                                <p class="item__content__text"> User Interface Design</p>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item-2">
+                            <img src="./img/work/work_2.jpg" alt="img" class="img__work">
+                            <div class="work__item__content">
+                                <h4 class="item__content__title">Project Name</h4>
+                                <p class="item__content__text"> User Interface Design</p>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item-3">
+                            <img src="./img/work/Rectangle 17.jpg" alt="img" class="img__work">
+                        </div>
+                        <div class="work__item__content">
+                            <h4 class="item__content__title">Project Name</h4>
+                            <p class="item__content__text"> User Interface Design</p>
+                        </div>
+                        <div class="grid__item grid__item-4">
+                            <img src="./img/work/work_4.jpg" alt="img" class="img__work">
+                            <div class="work__item__content">
+                                <h4 class="item__content__title">Project Name</h4>
+                                <p class="item__content__text"> User Interface Design</p>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item-5">
+                            <img src="./img/work/work_5.jpg" alt="img" class="img__work">
+                            <div class="work__item__content">
+                                <h4 class="item__content__title">Project Name</h4>
+                                <p class="item__content__text"> User Interface Design</p>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item-6">
+                            <img src="./img/work/work_6.jpg" alt="img" class="img__work">
+                            <div class="work__item__content">
+                                <h4 class="item__content__title">Project Name</h4>
+                                <p class="item__content__text"> User Interface Design</p>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item-7">
+                            <img src="./img/work/work_7.jpg" alt="img" class="img__work">
+                            <div class="work__item__content">
+                                <h4 class="item__content__title">Project Name</h4>
+                                <p class="item__content__text"> User Interface Design</p>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item-8">
+                            <img src="./img/work/work_8.jpg" alt="img" class="img__work">
+                            <div class="work__item__content">
+                                <h4 class="item__content__title">Project Name</h4>
+                                <p class="item__content__text"> User Interface Design</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
         </section>
@@ -258,6 +299,29 @@
                 </div>
             </div>
         </section>
+        <!-- новая секция -->
+        <section class="slider">
+            <div class="slider-wrapepr">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
         <!-- новая секция  -->
         <section class="download">
             <div class="download-container">
@@ -275,51 +339,57 @@
                     </div>
                 </div>
             </div>
+            </div>
         </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-wrapper">
-                <div class="footer-description">
-                    <div class="footer-cards">
-                        <div class="cards-description">
-                            <h5 class="cards-description__title">Location</h5>
-                            <div class="cards-description__item">3481 Melrose Place
-                                Beverly Hills, CA 90210</div>
-                        </div>
-                        <div class="cards-description">
-                            <h5 class="cards-description__title">Share with Love</h5>
-                            <h5 class="cards-description__item">
-                                <ul class="footer-icons">
-                                    <li class="footer__icon"><a target="_blank" href="https://www.facebook.com"> <i
-                                                class="fa-brands fa-facebook-f   "></a></i></li>
-                                    <li class="footer__icon"><a target="_blank" href="https://www.twitter.com"><i
-                                                class="fa-brands fa-twitter "></a></i></li>
-                                    <li class="footer__icon"><a target="_blank" href="https://www.linkedin.com"><i
-                                                class="fa-brands fa-linkedin "></a></i></li>
-                                </ul>
-                            </h5>
-                        </div>
-                        <div class="cards-description">
-                            <h5 class="cards-description__title">About ActiveBox</h5>
-                            <h5 class="cards-description__item">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.
-
-                            </h5>
+        <!-- новая секция -->
+        <section class="contact">
+            <div class="contact-container">
+                <div class="contact-wrapper">
+                    <div class="contact-description">
+                        <div class="contact-cards">
+                            <div class="cards-description">
+                                <h5 class="cards-description__title">Location</h5>
+                                <div class="cards-description__item">3481 Melrose Place
+                                    Beverly Hills, CA 90210</div>
+                            </div>
+                            <div class="cards-description">
+                                <h5 class="cards-description__title">Share with Love</h5>
+                                <h5 class="cards-description__item">
+                                    <ul class="contact__icons">
+                                        <li class="contact__icon"><a target="_blank" href="https://www.facebook.com"> <i
+                                                    class="fa-brands fa-facebook-f   "></a></i></li>
+                                        <li class="contact__icon"><a target="_blank" href="https://www.twitter.com"><i
+                                                    class="fa-brands fa-twitter "></a></i></li>
+                                        <li class="contact__icon"><a target="_blank" href="https://www.linkedin.com"><i
+                                                    class="fa-brands fa-linkedin "></a></i></li>
+                                    </ul>
+                                </h5>
+                            </div>
+                            <div class="cards-description">
+                                <h5 class="cards-description__title">About ActiveBox</h5>
+                                <h5 class="cards-description__item">Cras justo odio, dapibus ac facilisis in, egestas
+                                    eget
+                                    quam. Donec ullamcorper nulla non metus auctor fringilla.
+                                </h5>
+                            </div>
                         </div>
                     </div>
-                    <div class="footer__text">
-                        <p class="footer__text-copyright">
-                            Copyright © 2015 ActiveBox. All Rights Reserved
-                            Made with <span class="footer-span"> by Kamal Chaneman</span>
-                        </p>
-                    </div>
-
                 </div>
             </div>
+        </section>
+    </main>
+    <!-- новая секция -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer__text">
+                Copyright © 2015 ActiveBox. All Rights Reserved
+                Made with <span class="footer-span"> by Kamal Chaneman</span>
+            </p>
         </div>
-
     </footer>
+
     <script type="module" src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 
 </html>
