@@ -6,17 +6,14 @@
     padding: 114px 0;
 }
 
-.our-team-container {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+
 
 .our-team-wrapper {}
 
 .our-team__cards {
     display: flex;
     justify-content: space-between;
+    align-content: center;
     width: 270px;
 
 
@@ -24,6 +21,9 @@
 }
 
 .our-team__perconal-card {
+    margin: 0 7.5px;
+    padding: 0 7.5px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,6 +32,9 @@
 }
 
 .perconal-card__photo {
+    overflow: hidden;
+    width: 280px;
+    height: 227.25px;
     padding-bottom: 30px;
 }
 
@@ -68,9 +71,10 @@
 .fa-brands {
     transition: 0.3s;
 }
-.fa-brands:hover{
+
+.fa-brands:hover {
     transform: scale(1.4);
-    
+
     color: $red;
 }
 
@@ -85,6 +89,68 @@
 }
 
 .fa-linkedin {
-    color:rgba(198, 203, 205, 1);
+    color: rgba(198, 203, 205, 1);
     padding: 10px 11px 11px 10px;
+}
+
+@media(max-width:320px) {
+
+    .our-team {
+        padding: 35px 20px 0 20px;
+    }
+
+    .container {
+        width: 280px;
+    }
+
+    .our-team-wrapper {
+        margin: 0 -15px;
+    }
+
+    .our-team__cards {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .our-team__perconal-card {}
+
+    .perconal-card__photo {
+        padding-bottom: 25px;
+    }
+
+    .perconal-card__name {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+
+
+    }
+
+    .perconal-card__proffesion {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        padding-bottom: 35px;
+    }
+
+    .perconal-card__text {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        align-items: center;
+        padding-bottom: 55px;
+    }
+
+    .brands-icons {
+        padding-bottom: 49px;
+    }
+
+    .icon {}
 }

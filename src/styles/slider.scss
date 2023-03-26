@@ -2,41 +2,44 @@
 @import '_mixins.scss';
 @import '_variables.scss';
 
-.swiper {
-    width: 600px;
-    height: 300px;
-  }
-  html,
-  body {
-    position: relative;
-    height: 100%;
-  }
+.swiper-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
 
-  body {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  background-color: rgba(92, 50, 73, 1);
+}
 
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
+.swiper-slide__img {
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.swiper-slide__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.swiper-slide__subtitle {
+  height: 154px;
+  @include h2;
+  font-family: 'Cardo';
+  font-style: italic;
+  width: 156px;
+  color: $white;
+  padding: 47px 104px 129.07px 88px
+}
+
+.swiper-slide__text {
+  @include h6;
+  color: $white;
+}

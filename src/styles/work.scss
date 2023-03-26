@@ -1,60 +1,219 @@
 @import '_cdn.scss';
 @import '_mixins.scss';
 @import '_variables.scss';
-.work{
-    
-}
-.work-container {
-    // max-width: 1170px;
-    // margin: 0 auto;
-    // padding: 0 15px;
-}
-.work-wrapper {
-}
+
+.work {}
+
+
+
+.work-wrapper {}
+
 .work__grid {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    justify-content:center;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
 }
+
+
 .grid__item {
-    
-    
-    // border: 2px solid white;
+
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
+
+.grid__item:hover .work__item__content {
+    opacity: 1;
+    z-index: 6;
+
+}
+
+.img__work {
+    object-fit: cover;
+    width: 379px;
+    height: 340px;
+    cursor: pointer;
+}
+
+.work__item__content {
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(255, 67, 67, 0.8);
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.item__content__title {
+    @include h4;
+    text-transform: uppercase;
+    color: $white;
+    padding: 36px;
+}
+
+.item__content__text {
+    @include p;
+    color: $white;
+
+    text-align: center;
+
+}
+
+
 .grid__item-1 {
-    grid-column:1/2 ; 
-    grid-row:1/2 ;
-       
+
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
+
 
 .grid__item-2 {
-    grid-column:2/3 ; 
-    grid-row:1/2 ;
-}
-.grid__item-3 {
-    grid-column:3/4 ; 
-    grid-row:1/2 ;   
-}
-.grid__item-4 {
-    grid-column:4/5 ; 
-    grid-row:1/2 ;
-}
-.grid__item-5 {
-    grid-column:1/2 ; 
-    grid-row:2/3 ;
-    
-}
-.grid__item-6 {
-    grid-column:2/3 ; 
-    grid-row:2/3 ;
+    grid-column: 2/3;
+    grid-row: 1/2;
 
 }
-.grid__item-7 {
-    grid-column:3/4 ; 
-    grid-row:2/3 ;
+
+.grid__item-3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+
 }
+
+.grid__item-4 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+
+}
+
+.grid__item-5 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+
+
+}
+
+.grid__item-6 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+
+}
+
+.grid__item-7 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+
+
+}
+
 .grid__item-8 {
-    grid-column:4/5 ; 
-    grid-row:2/3 ;
+    grid-column: 4/5;
+    grid-row: 2/3;
+
+
+}
+
+@media(max-width:320px) {
+    .work {}
+
+    .work-wrapper {}
+
+    .work__grid {
+        width: 320px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: stretch;
+    }
+
+    .grid__item {
+        width: 160px;
+        height: 144px;
+        overflow: hidden;
+    }
+
+    .img__work {
+        object-fit: cover;
+        max-width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .work__item__content {}
+
+    .item__content__title {
+        font-family: 'Raleway';
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        padding:0;
+    }
+
+    .item__content__text {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        align-items: center;
+        text-align: center;
+        padding-top: 4.63px;
+
+
+
+    }
+
+    .grid__item-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .grid__item-2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+
+    }
+
+    .grid__item-3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .grid__item-4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .grid__item-5 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .grid__item-6 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .grid__item-7 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .grid__item-8 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
 }

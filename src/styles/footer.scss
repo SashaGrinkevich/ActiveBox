@@ -2,22 +2,56 @@
 @import '_mixins.scss';
 @import '_variables.scss';
 
-.footer{
+.footer {
     background-color: #2C3154;
-    padding: 23.86px 570px 24.14px 570;
+    padding: 23.86px 0 24.14px 0;
+    display: flex;
+    justify-content: center;
 }
-.footer-container {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
 
-}
+
+
 .footer__text {
     width: 370px;
     @include p;
     color: $gray;
 }
+
 .footer-span {
     @include p;
     color: $white;
+}
+
+@media (max-width:320px) {
+    .footer {
+        display: flex;
+        justify-content: flex-start;
+
+        padding: 29.86px 20px 28.14px 20px;
+    }
+    
+    .container {
+        width: 280px;
+    }
+
+    .footer__text {
+        margin: 0 -15px;
+        width: 280px;
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        align-items: stretch;
+        text-align: center;
+        .footer-span {
+            font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        align-items: stretch;
+        text-align: center;
+            
+        }
+    }
+
 }

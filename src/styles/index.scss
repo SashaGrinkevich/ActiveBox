@@ -4,6 +4,13 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css);
 @import '_cdn.scss';
@@ -17,5 +24,6 @@
 @import url(./slider.scss);
 @import url(./download.scss);
 @import url(./footer.scss);
+@import url(./contact.scss);
 
 
