@@ -4,7 +4,8 @@
 
 .work {}
 
-
+.container{
+}
 
 .work-wrapper {}
 
@@ -32,8 +33,8 @@
 
 .img__work {
     object-fit: cover;
-    width: 379px;
-    height: 340px;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
 }
 
