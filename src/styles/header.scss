@@ -43,11 +43,15 @@
 
 }
 
+.header__burger{
+    display: none;
+}
 .menu__link {
     text-align: center;
     width: 134px;
     @include h6;
     position: relative;
+    // z-index: 2;
 
     &:hover {
         &::after {
@@ -90,6 +94,10 @@
 
 }
 
+.header__burger {
+    display: none;
+}
+
 @media (max-width:1024px) {
     .header {
         padding: 0 20px;
@@ -125,4 +133,129 @@
     }
 
     .nav__link {}
+}
+
+@media(max-width:320px) {
+    .header {
+        padding: 0 20px;
+
+    }
+
+    .header-wrapper {
+        padding: 0;
+        width: 280px;
+        border: none;
+    }
+
+    .header__logo {
+        max-width: 130px;
+        position: relative;
+        z-index: 5;
+    }
+
+    .logo-1 {
+        padding: 21.59px 1.69px 20.54px 0;
+        max-width: 67px;
+    }
+
+    .logo-2 {
+        padding: 21.59px 0 20.54px 0;
+        max-width: 34px;
+    }
+
+    .header__nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(37, 43, 73, 0.8);
+        transition: 0.5s;
+    }
+    .header__nav:active{
+        top: 0;
+    }
+    .nav {}
+    
+    .nav__menu {
+        padding-top: 80.5;
+        display: block;
+        
+    }
+    
+    .menu__link {
+        width: 280px;
+        padding: 25px;
+        text-align: left;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+
+        align-items: center;
+        text-transform: uppercase;
+
+    }
+
+    .nav__link {}
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 24px;
+        height: 19px;
+        position: relative;
+        z-index: 5;
+        background-color: transparent;
+        border: none;
+    }
+
+    .header__burger span {
+        display: block;
+        content: '';
+        position: absolute;
+        background-color: $white;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        top: 7.5px;
+        transition: 0.3s;
+
+    }
+
+    .header__burger::after,
+    .header__burger::before {
+        display: block;
+        content: '';
+        position: absolute;
+        background-color: $white;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        transition: 0.3s;
+    }
+
+    .header__burger::before {
+        top: 0;
+    }
+
+    .header__burger::after {
+        bottom: 0;
+    }
+    .header__burger:active::before{
+        transform: rotate(45deg);
+        top: 8px;
+
+    }
+    .header__burger:active::after{
+        transform: rotate(-45deg);
+        bottom: 8px;
+
+    }
+    .header__burger:active span{
+        transform: scale(0);
+    }
+    .header.open .header__nav{
+        transform: translateX(100%);
+    }
 }

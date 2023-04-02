@@ -6,8 +6,8 @@
     background-image: url(../img/banner/img.jpg);
     background-size: cover;
     background-position: center;
-    padding: 131px 0 120px 0;
     position: relative;
+    
 }
 
 .banner::before {
@@ -20,14 +20,16 @@
     left: 0;
     z-index: 1;
     background-color: rgba(37, 43, 73, 0.8);
-
-
-
+    
+    
+    
 }
 
 
 
 .banner-wrapper {
+    // height:100vh;
+    padding: 100px 0 120px 0;
     position: relative;
     top: 0;
     left: 0;
@@ -46,6 +48,7 @@
     text-transform: uppercase;
     @include h1;
     color: $white;
+    padding: 131px 0 31.43px 0;
 }
 
 
@@ -56,7 +59,7 @@
     font-size: 24px;
     line-height: 28px;
     color: $white;
-    padding: 31.43px 0 82px 0;
+    padding-bottom:82px;
 }
 
 .banner__button {
@@ -67,11 +70,13 @@
     @include h4;
     width: 369px;
     height: 80px;
+    cursor: pointer;
     background-color: $background-button;
 }
 
 .banner__button:hover {
     background-color: #E71414;
+
 }
 
 .banner__button:active {
@@ -109,11 +114,11 @@
         align-items: center;
         text-align: center;
         text-transform: uppercase;
-        padding-bottom: 61.86px;
+        padding: 131px 0 31.43px 0;
     }
 
     .banner__text {
-        padding: 0 0 91.57px 0;
+        padding-bottom:82px;
         font-family: 'Raleway';
         font-weight: 400;
         font-size: 18px;
@@ -137,14 +142,18 @@
 @media(max-width:320px) {
     .banner {
         object-fit: cover;
-        padding: 106px 20px 52px 20px;
+        padding: 0  20px;
     }
 
     .banner-wrapper {
         width: 280px;
+        padding: 56.28px 0 52px 0;
+
     }
 
-    .banner-content {}
+    .banner-content {
+
+    }
 
     .banner__title {
         width: 280px;
@@ -155,7 +164,7 @@
         line-height: 42px;
         display: flex;
         align-items: stretch;
-        padding-bottom: 32.71px;
+        padding: 49.72px 0 32.71px 0;
         text-transform: uppercase;
     }
 
@@ -168,7 +177,7 @@
         line-height: 16px;
         display: flex;
         align-items: stretch;
-        padding-bottom: 42.71px;
+        padding-bottom: 52px;
     }
 
     .banner__button {

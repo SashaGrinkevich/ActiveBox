@@ -33,6 +33,7 @@
     @include h4;
     width: 369px;
     height: 80px;
+    cursor: pointer;
     background-color: $background-button;
 }
 .download__button:hover {
