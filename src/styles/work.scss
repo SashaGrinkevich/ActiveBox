@@ -126,12 +126,35 @@
 
 
 }
+@media(max-width:1024px) {
+    .work__item__content{
+        padding: 74.6px 0 86.47px 0;
+    }
+    
+    .item__content__title {
+        font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 21px;
+text-transform: uppercase;
+padding: 6px 0;
+
+
+    }
+    .item__content__text {
+        font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+align-items: center;
+text-align: center;
+padding-top: 12.81px;
+    }
+}
 
 @media(max-width:320px) {
-    .work {}
-
-    .work-wrapper {}
-
     .work__grid {
         width: 320px;
         display: grid;

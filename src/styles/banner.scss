@@ -7,7 +7,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    
+
 }
 
 .banner::before {
@@ -20,9 +20,9 @@
     left: 0;
     z-index: 1;
     background-color: rgba(37, 43, 73, 0.8);
-    
-    
-    
+
+
+
 }
 
 
@@ -59,7 +59,7 @@
     font-size: 24px;
     line-height: 28px;
     color: $white;
-    padding-bottom:82px;
+    padding-bottom: 82px;
 }
 
 .banner__button {
@@ -92,11 +92,11 @@
 @media(max-width:1024px) {
     .banner {
         text-align: center;
-        padding: 157px 20px 126px 20px;
+        padding: 0 20px 0 20px;
     }
 
     .banner-wrapper {
-        width: 984px;
+        padding: 100px 0 126px 0;
     }
 
     .banner-content {
@@ -114,35 +114,33 @@
         align-items: center;
         text-align: center;
         text-transform: uppercase;
-        padding: 131px 0 31.43px 0;
+        padding: 157px 0 61.86px 0;
     }
 
     .banner__text {
-        padding-bottom:82px;
+        padding-bottom: 82px;
         font-family: 'Raleway';
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
-
         align-items: center;
         text-align: center;
+        padding-bottom: 91.57px;
     }
 
     .banner__button {
         height: 77.57px;
         width: 313.15px;
 
-
     }
-
-    .banner__btn {}
 
 }
 
 @media(max-width:320px) {
     .banner {
         object-fit: cover;
-        padding: 0  20px;
+        padding: 0 20px;
+        
     }
 
     .banner-wrapper {
@@ -151,9 +149,7 @@
 
     }
 
-    .banner-content {
-
-    }
+    .banner-content {}
 
     .banner__title {
         width: 280px;
