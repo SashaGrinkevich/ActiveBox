@@ -77,14 +77,71 @@
     padding: 10px 11px 11px 10px;
 }
 
+@media(max-width: 1024px) {
+    .contact {
+        padding: 49.59px 20px 41.19px 20px;
+    }
+
+    .contact-wrapper {}
+
+    .contact-cards {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cards-description {
+        width: 315px;
+    }
+
+    .cards-description__title {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .cards-description__item {
+        font-family: 'Raleway';
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+    }
+
+    .contact__icons {
+        
+        justify-content: space-around;
+        padding: 0 70px;
+    }
+
+    .contact__icon {
+        width: 33px;
+        height: 33px;
+
+    }
+
+    .fa-brands {}
+
+    .fa-facebook-f {}
+
+    .fa-twitter {}
+
+    .fa-linkedin {}
+}
+
+
 @media(max-width:320px) {
     .contact {
         padding: 34.14px 20px 31.14px 20px;
     }
 
-    .container {
-        width: 280px;
-    }
+
 
     .contact-wrapper {
         padding: 0 -15px;
@@ -129,8 +186,8 @@
         // margin: 0 -15px;
         // width: 280px;
         align-items: center;
-        justify-content:space-around ;
-         padding: 0 8px;
+        justify-content: space-around;
+        padding: 0 8px;
     }
 
     .contact__icon {
@@ -138,7 +195,7 @@
         width: 33px;
         height: 33px;
         margin: 0 16px;
-        
+
     }
 
     .fa-brands {}
